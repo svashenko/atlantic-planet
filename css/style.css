@@ -1,0 +1,571 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+menu, ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-display: swap;
+  font-family: "AGaramondPro";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Adobe Garamond Pro SemiboldItalic"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-SemiboldItalic.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-SemiboldItalic.woff") format("woff"); }
+
+@font-face {
+  font-display: swap;
+  font-family: "AGaramondPro";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Adobe Garamond Pro BoldItalic"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-BoldItalic.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-BoldItalic.woff") format("woff"); }
+
+@font-face {
+  font-display: swap;
+  font-family: "AGaramondPro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Adobe Garamond Pro Regular"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Regular.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Regular.woff") format("woff"); }
+
+@font-face {
+  font-display: swap;
+  font-family: "AGaramondPro";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Adobe Garamond Pro Semibold"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Semibold.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Semibold.woff") format("woff"); }
+
+@font-face {
+  font-display: swap;
+  font-family: "AGaramondPro";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Adobe Garamond Pro Bold"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Bold.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Bold.woff") format("woff"); }
+
+@font-face {
+  font-display: swap;
+  font-family: "AGaramondPro";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Adobe Garamond Pro Italic"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Italic.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/garamond/AGaramondPro-Italic.woff") format("woff"); }
+@font-face {
+  font-display: swap;
+  font-family: "Atlantic Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://www.theatlantic.com/packages/fonts/atlantic/Atlantic-Serif.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/atlantic/Atlantic-Serif.woff") format("woff"); }
+@font-face {
+  font-display: swap;
+  font-family: "Druk";
+  font-style: normal;
+  font-weight: 800;
+  /* stylelint-disable indentation */
+  src: url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/druk/Druk-Heavy-Web.73c680315608.woff2") format("woff2"), url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/druk/Druk-Heavy-Web.de0a29cd8676.woff") format("woff");
+  /* stylelint-enable indentation */ }
+@font-face {
+  font-display: swap;
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  /* stylelint-disable indentation */
+  src: url("https://www.theatlantic.com/packages/fonts/graphik/Graphik-Regular-Web.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/graphik/Graphik-Regular-Web.woff") format("woff");
+  /* stylelint-enable indentation */ }
+
+@font-face {
+  font-display: swap;
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  /* stylelint-disable indentation */
+  src: url("https://www.theatlantic.com/packages/fonts/graphik/Graphik-Semibold-Web.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/graphik/Graphik-Semibold-Web.woff") format("woff");
+  /* stylelint-enable indentation */ }
+@font-face {
+  font-display: swap;
+  font-family: "Lyon Text";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  /* stylelint-disable indentation */
+  src: url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/lyon/Lyon-Text-Regular.952052f78892.woff2") format("woff2"), url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/lyon/Lyon-Text-Regular.840c78933255.woff") format("woff");
+  /* stylelint-enable indentation */ }
+
+@font-face {
+  font-display: swap;
+  font-family: "Lyon Text";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 400;
+  /* stylelint-disable indentation */
+  src: url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/lyon/Lyon-Text-Regular-Italic.1f3d1b40255e.woff2") format("woff2"), url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/lyon/Lyon-Text-Regular-Italic.ce9636f76967.woff") format("woff");
+  /* stylelint-enable indentation */ }
+@font-face {
+  font-display: swap;
+  font-family: "Noe Text";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 900;
+  /* stylelint-disable indentation */
+  src: url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/noe/Noe-Text-Black.b05d72fe331d.woff2") format("woff2"), url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/noe/Noe-Text-Black.2dcd42be9f8e.woff") format("woff");
+  /* stylelint-enable indentation */ }
+
+@font-face {
+  font-display: swap;
+  font-family: "Noe Text";
+  font-stretch: normal;
+  font-style: italic;
+  font-weight: 900;
+  /* stylelint-disable indentation */
+  src: url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/noe/Noe-Text-Black-Italic.3e111503a215.woff2") format("woff2"), url("https://cdn.theatlantic.com/tng/static/frontend/dist/theatlantic/fonts/noe/Noe-Text-Black-Italic.0086b1b36dfc.woff") format("woff");
+  /* stylelint-enable indentation */ }
+@font-face {
+  font-display: swap;
+  font-family: "Logic Monospace";
+  font-style: normal;
+  font-weight: 400;
+  /* stylelint-disable indentation */
+  src: url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-Medium.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-Medium.woff") format("woff");
+  /* stylelint-enable indentation */ }
+
+@font-face {
+  font-display: swap;
+  font-family: "Logic Monospace";
+  font-style: normal;
+  font-weight: 300;
+  /* stylelint-disable indentation */
+  src: url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-Regular.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-Regular.woff") format("woff");
+  /* stylelint-enable indentation */ }
+
+@font-face {
+  font-display: swap;
+  font-family: "Logic Monospace";
+  font-style: italic;
+  font-weight: 300;
+  /* stylelint-disable indentation */
+  src: url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-RegularItalic.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-RegularItalic.woff") format("woff");
+  /* stylelint-enable indentation */ }
+
+@font-face {
+  font-display: swap;
+  font-family: "Logic Monospace";
+  font-style: italic;
+  font-weight: 400;
+  /* stylelint-disable indentation */
+  src: url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-MediumItalic.woff2") format("woff2"), url("https://www.theatlantic.com/packages/fonts/logic/LogicMonospace-MediumItalic.woff") format("woff");
+  /* stylelint-enable indentation */ }
+
+.footer {
+  font-family: "Graphik", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+  font-size: 14px;
+  padding: 32px 32px 48px;
+  background-color: #000;
+  color: #fff;
+  fill: #fff; }
+  .footer__container {
+    margin: 0 auto;
+    max-width: 1036px; }
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 16px;
+    padding-bottom: 32px; }
+  .footer__links-list:last-child {
+    width: 96px;
+    display: flex;
+    flex-wrap: wrap; }
+    .footer__links-list:last-child li:nth-child(3n + 3) {
+      margin: 0 24px 24px 24px; }
+    .footer__links-list:last-child li:first-child {
+      width: 100%; }
+    .footer__links-list:last-child svg {
+      height: 16px;
+      width: 16px; }
+  .footer__link {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
+    .footer__link:first-child {
+      font-size: 12px;
+      cursor: auto;
+      margin-bottom: 16px;
+      padding: 0;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase; }
+    .footer__link:not(:first-child) {
+      margin-bottom: 16px;
+      line-height: 1.25;
+      transition: all 150ms;
+      cursor: pointer; }
+      .footer__link:not(:first-child):hover {
+        color: #5e6a74;
+        fill: #5e6a74; }
+    .footer__link:last-child {
+      margin-bottom: 0; }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__bottom ul {
+      display: flex;
+      align-items: center;
+      justify-content: start; }
+    .footer__bottom .footer__link {
+      line-height: 1.125;
+      font-size: 10px;
+      letter-spacing: 0.25px;
+      cursor: pointer;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      text-transform: capitalize;
+      margin-bottom: 8px;
+      font-weight: 400;
+      transition: all 150ms; }
+      .footer__bottom .footer__link:hover {
+        color: #5e6a74;
+        fill: #5e6a74; }
+      .footer__bottom .footer__link:not(:last-child) {
+        border-right: 1px solid #fff;
+        margin-right: 8px;
+        padding-right: 8px; }
+  .footer__copyright {
+    line-height: 1.125;
+    font-size: 10px;
+    letter-spacing: 0.25px; }
+  .footer__logo svg {
+    width: 136px;
+    cursor: pointer;
+    transition: all 150ms; }
+    .footer__logo svg:hover {
+      color: #5e6a74;
+      fill: #5e6a74; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Graphik", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+  background-color: #fbfafa;
+  position: relative; }
+
+.hidden {
+  display: none; }
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto; }
+
+.header {
+  height: 69px;
+  position: fixed;
+  background: #fff;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fbfafa;
+  border-bottom: 1px solid #9b9b9b;
+  border-top: 3px solid #000;
+  font-size: 14px;
+  font-family: "Graphik", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+  padding-bottom: 6px; }
+  .header__container {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__left-logo svg {
+    width: 26px;
+    height: 40px;
+    fill: #e7131a;
+    cursor: pointer;
+    margin-right: 32px; }
+  .header__burger {
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    margin-right: 16px; }
+    .header__burger::before {
+      content: "";
+      display: block;
+      top: -7px;
+      width: 20px;
+      height: 1px;
+      background-color: #000;
+      border-radius: 4px;
+      cursor: pointer;
+      position: absolute; }
+    .header__burger::after {
+      content: "";
+      display: block;
+      bottom: -7px;
+      width: 20px;
+      height: 1px;
+      background-color: #000;
+      border-radius: 4px;
+      cursor: pointer;
+      position: absolute; }
+  .header__search svg {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0 16px; }
+  .header__popular, .header__latest {
+    cursor: pointer;
+    margin: 0 16px; }
+  .header__logo {
+    cursor: pointer;
+    transform: translateX(-34%); }
+    .header__logo svg {
+      width: 175px;
+      height: 27px; }
+  .header__subsc {
+    color: #fff;
+    background-color: #e7131a;
+    border: 1px solid #d0021b;
+    border-radius: 4px;
+    padding: 10px 18px 11px;
+    cursor: pointer;
+    transition: all 300ms;
+    margin-left: 32px; }
+    .header__subsc:hover {
+      background: #b80f15; }
+  .header__sign {
+    text-transform: capitalize;
+    cursor: pointer; }
+
+.top {
+  height: calc(100vh - 66px);
+  max-height: 900px;
+  max-width: 2000px;
+  width: 100%;
+  margin: 66px auto 0 auto;
+  display: flex; }
+  .top__right {
+    flex: 1 1 auto;
+    background: url(../img/main.jpg) center/cover no-repeat;
+    flex-basis: 874.66667px;
+    position: relative; }
+    .top__right-quote {
+      position: absolute;
+      font-family: "Graphik", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+      font-size: 10px;
+      color: #666;
+      right: 0;
+      top: 100%;
+      padding: 4px; }
+  .top__left {
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px 16px;
+    padding-right: 48px;
+    flex: 1 1 auto;
+    flex-basis: 437.33333px; }
+    .top__left-sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 373px; }
+    .top__left-line-tp {
+      border-bottom: 1px solid #000;
+      padding-bottom: 16px; }
+    .top__left-line-bt {
+      font-family: AGaramondPro, "Adobe Garamond Pro", Garamond, Georgia, serif;
+      font-size: 18px;
+      line-height: 1.125;
+      font-weight: 400;
+      border-top: 1px solid #000;
+      padding-top: 16px; }
+      .top__left-line-bt em {
+        font-style: italic; }
+      .top__left-line-bt span {
+        font-family: "Graphik", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+        cursor: help;
+        text-decoration: underline; }
+    .top__left-content {
+      margin-top: auto;
+      margin-bottom: auto;
+      padding-bottom: 32px;
+      padding-top: 32px; }
+    .top__left h1 {
+      font-family: AGaramondPro, "Adobe Garamond Pro", Garamond, Georgia, serif;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 1.125;
+      letter-spacing: -0.25px;
+      margin: 0; }
+    .top__left h2 {
+      font-family: AGaramondPro, "Adobe Garamond Pro", Garamond, Georgia, serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.125;
+      letter-spacing: -0.25px;
+      margin: 12px 0 0 0; }
+
+.table {
+  padding-bottom: 56px; }
+  .table__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px; }
+  .table__item {
+    position: relative;
+    flex-basis: calc(33% - 32px);
+    padding: 0 16px;
+    padding-bottom: 16px;
+    margin: 16px 0;
+    border-right: 1px solid #d3dce6;
+    grid-column: span 4; }
+    .table__item::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: calc(100% + 2px);
+      height: 1px;
+      background: #d3dce6;
+      bottom: -17px;
+      left: -1px; }
+    .table__item:nth-child(3n) {
+      border-right: none;
+      padding-right: 0;
+      margin-right: 16px; }
+    .table__item:first-child, .table__item:nth-child(3n + 4) {
+      padding-left: 0;
+      margin-left: 16px; }
+  .table__img {
+    width: 100%;
+    cursor: pointer; }
+  .table__credit {
+    color: #5e6a74;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    max-width: 100%;
+    padding-top: 8px;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap; }
+  .table__info {
+    margin: 16px 20px 0; }
+  .table__title {
+    font-family: AGaramondPro, "Adobe Garamond Pro", Garamond, Georgia, serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.25px;
+    margin-bottom: 20px;
+    cursor: pointer; }
+  .table__author, .table__date {
+    font-family: "Graphik", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+    line-height: 1.125;
+    text-transform: uppercase;
+    white-space: normal;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-right: 8px;
+    font-weight: 600;
+    cursor: pointer; }
+  .table__date {
+    color: #e7131a; }
+  .table__more {
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 24px auto;
+    padding: 12px 32px; }
+    .table__more span {
+      margin: 8px;
+      padding: 12px 24px;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 4px;
+      cursor: pointer; }
+
+.ad {
+  margin: 16px auto 0;
+  position: relative; }
+  .ad:after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid #d3dce6;
+    padding-bottom: 16px;
+    max-width: calc(1312px - 32px);
+    margin: 0 auto; }
+  .ad p {
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+    display: block;
+    color: #5e6a74;
+    content: "Advertisement";
+    font-family: "Graphik", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase; }
+  .ad__video {
+    width: 80%;
+    aspect-ratio: 16/9;
+    margin: 0 auto; }
